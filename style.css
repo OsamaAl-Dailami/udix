@@ -1,0 +1,439 @@
+/* وصلنا الى الدقيقة 40:00 */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+
+/* body{
+    max-width: 1200px;
+    margin-inline: auto;
+} */
+
+:root{
+    --primary:#381DDB;
+    --light-red:#FFA3A3;
+    --dnger:#FC5252;
+    --dark:#222222;
+    --light:#FFFFFF;
+}
+
+.resize{
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+/*  Components */
+button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    padding-inline: 28px;
+    padding-block: 14px;
+    color: var(--primary);
+    transition: all 300ms;
+}
+
+.btn.link:hover{
+    text-decoration: underline;
+}
+
+.btn.btn-border{
+    border: 1px solid var(--primary);
+}
+
+.btn.btn-background{
+    color: var(--light);
+    background-color: var(--primary);
+}
+
+.btn.btn-border:hover{
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+
+/* Utility Classes */
+
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-evenly{
+    justify-content: space-evenly;
+}
+
+.gap-4{
+    gap: 1rem;
+}
+
+.gap-8{
+    gap: 2rem;
+}
+
+.gap-10{
+    gap: 40px;
+}
+
+.w-fit{
+     width: fit-content;
+}
+
+.relative{
+    position: relative;
+}
+
+hr{
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: rgba(255, 0, 0, 0.326);
+    text-align: center;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.162), rgba(255, 0, 0, 0));
+
+
+}
+
+hr:after {
+    content: "•";
+    display: inline-block;
+    position: relative;
+    top: -0.5em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;  
+}
+
+
+
+/* Main Styles */
+
+.bg-img{
+    background-image: url('./media/hero-img.png  '); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height:90vh ; 
+}
+
+.page-header{
+    padding:24px 0;
+}
+
+.navbar a{
+    color: var(--light);
+    margin-left: 40px;
+}
+
+.navbar a:hover{
+    color: var(--light-red);
+}
+
+
+/*  Start Hero Section */
+
+.hero-section{
+    gap: 130px;
+    margin-top: 147px;
+
+}
+
+.hero-text{
+    max-width:53ch ;
+}
+
+.hero-text h2{
+    color: var(--light-red);
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    color: var(--light);
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.hero-text button{
+    color: var(--light-red);
+    font-size: large;
+    margin-top: 5rem;
+    padding: 10px;
+
+    img{
+        padding-left: 10px;
+    }
+}
+
+.form-dev{
+    background-color: var(--light);
+    padding: 20px;
+    box-shadow: 21px 14px 21px 10px rgba(204, 204, 204, 0.3);
+
+}
+
+
+form{
+    padding: 60px;
+    background-color: var(--light);
+   
+    input{
+        width: 260px;
+        padding: 16px 24px
+    }
+} 
+
+.form-laptop{
+    position:absolute;
+    bottom: 80px;
+    right: 2px;
+    padding: 10px;
+}
+
+/*  End Hero Section */
+
+
+
+/* Start about-us Section */
+.about-us{
+    margin-top: 140px;
+
+    img{
+        margin-top: 76px;
+    }
+}
+
+.aboutUS-text{
+    text-align: right;
+    width: 570px;
+    height: 304px;
+    
+
+    h2{
+        margin-top: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 5ch;
+    }
+
+    p{
+        margin-top: 50px;
+        color: #7e7979;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-stretch: narrower;
+        font-style: unset;
+
+    }
+}
+
+
+
+
+
+
+
+
+/* End about-us Section */
+
+
+/* Start our-solutions Section */
+.our-solutions{
+    margin-top: 140px;
+    margin-bottom: 140px;
+}
+
+
+.our-solutions p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #7e7979;
+    text-align: center;
+    
+
+
+}
+
+.card{
+    padding: 20px;
+    max-width: 300px;
+}
+
+.card h3{
+    margin-top: 30px;
+}
+
+.card p{
+    color: #7e7979;
+    text-align: start;
+}
+
+
+.arrow-right img{
+    margin-top: 50px;
+}
+
+
+
+/* End our-solutions Section */
+
+
+
+
+/* Start our-values Section */
+.our-values{
+    margin-top: 140px;
+}
+
+.ourValues-texts{
+    margin-top: 80px;
+}
+
+.our-values p{
+    margin: 30px 0;
+    width: 70ch;
+    color: #7e7979;
+}
+/* End our-values Section */
+
+
+/* Start support Section */
+.Support{
+    /* padding: 23rem; */
+    background-color: #222222; 
+    width: 1180px;
+    height: 519px; 
+    color: aliceblue;
+    
+    h2{
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+    p{
+        max-width: 58ch;
+        text-align: center;
+        margin: 20px 23rem;
+        color: #7e7979;
+        
+    }
+
+    input{
+        margin: 0 10px;
+        padding: 10px;
+        background-color: #2c2b2b;
+        border: none;
+        
+    }
+
+    button{
+        padding: 10px 20px;
+        background-color:var(--dnger);
+        color: white;
+    }
+}
+
+
+/* End support Section */
+
+
+/* Start customers Section */
+.customers{
+
+    h2{
+        text-align: center;
+        margin: 3rem 0;
+    }
+}
+
+.customers-cards .card{
+    margin: 10px;
+    background-color: #cdc6c63e;
+    
+}
+
+/* End customers Section */
+
+
+
+/* Start Footer Section */
+footer{
+    margin-top: 140px;
+    padding: 20px 0;
+    background-color: #7e79791c;
+    p{
+        max-width: 60ch;
+        margin: 5px 0;
+        color: #7e7979;
+    }
+
+}
+
+.footer-left{
+    padding: 30px ;
+    
+    p{
+        padding:20px 0;
+    }
+}
+
+.footer-nav ul{
+    li{
+        margin-left: 40px;
+        list-style-type: none;
+    }
+}
+
+.footer-right{
+    padding: 30px ;
+
+    input{
+        margin: 0 10px;
+        padding: 5px 20px;
+        color: blue;
+        border: #381DDB solid 1px;
+   
+    }
+
+    #sing-in{
+        border: none;
+
+    }
+
+
+    .social-media-links{
+        margin-top:3rem ;
+        a{
+            margin-right:30px ;
+        }
+    }
+}
+
+/* End Footer Section */
